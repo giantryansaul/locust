@@ -79,15 +79,15 @@ def request_stats_csv():
                 '{}'.format(entry.method),
                 '{}'.format(entry.name),
                 '{:6d}'.format(entry.num_requests),
-                '{:d}'.format(entry.get_response_time_percentile(0.50)),
-                '{:d}'.format(entry.get_response_time_percentile(0.66)),
-                '{:d}'.format(entry.get_response_time_percentile(0.75)),
-                '{:d}'.format(entry.get_response_time_percentile(0.80)),
-                '{:d}'.format(entry.get_response_time_percentile(0.90)),
-                '{:d}'.format(entry.get_response_time_percentile(0.95)),
-                '{:d}'.format(entry.get_response_time_percentile(0.98)),
-                '{:d}'.format(entry.get_response_time_percentile(0.99)),
-                '{:d}'.format(entry.max_response_time)
+                '{:6d}'.format(entry.get_response_time_percentile(0.50)),
+                '{:6d}'.format(entry.get_response_time_percentile(0.66)),
+                '{:6d}'.format(entry.get_response_time_percentile(0.75)),
+                '{:6d}'.format(entry.get_response_time_percentile(0.80)),
+                '{:6d}'.format(entry.get_response_time_percentile(0.90)),
+                '{:6d}'.format(entry.get_response_time_percentile(0.95)),
+                '{:6d}'.format(entry.get_response_time_percentile(0.98)),
+                '{:6d}'.format(entry.get_response_time_percentile(0.99)),
+                '{:6d}'.format(entry.max_response_time)
             ])
         else:
             rows.append([
